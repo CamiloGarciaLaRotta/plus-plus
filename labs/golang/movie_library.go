@@ -1,32 +1,32 @@
 package main
 
-type MovieLibrary struct{}
+type movieLibrary struct{}
 
-func NewMovieLibrary() *MovieLibrary {
-	return &MovieLibrary{}
+func newMovieLibrary() *movieLibrary {
+	return &movieLibrary{}
 }
 
-func (library *MovieLibrary) Add(movie *Movie) {
+func (library *movieLibrary) add(movie *movie) {
 }
 
-func (library *MovieLibrary) Remove(movie *Movie) {
+func (library *movieLibrary) remove(movie *movie) {
 }
 
-func (library *MovieLibrary) TotalCount() int {
+func (library *movieLibrary) totalCount() int {
 	return 0
 }
 
-func (library *MovieLibrary) All() []Movie {
-	return []Movie{}
+func (library *movieLibrary) all() []movie {
+	return []movie{}
 }
 
-func (library *MovieLibrary) Each(visitor func(Movie)) {
+func (library *movieLibrary) each(visitor func(movie)) {
 }
 
-func (library *MovieLibrary) FindBy(predicate func(Movie) bool) *Movie {
+func (library *movieLibrary) findBy(predicate func(movie) bool) *movie {
 	return nil
 }
 
-func (library *MovieLibrary) SortBy(comparer func(Movie, Movie) int) []Movie {
-	return []Movie{}
+func (library *movieLibrary) sortBy(comparer func(movie, movie) int) []movie {
+	return []movie{}
 }

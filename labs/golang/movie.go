@@ -1,15 +1,15 @@
 package main
 
-type Movie struct {
-	Title         string
-	Studio        Studio
-	YearPublished int
+type movie struct {
+	title         string
+	studio        string
+	yearPublished int
 }
 
-func NewMovie(title string, studio Studio, year int) *Movie {
-	return &Movie{}
+func newMovie(title string, studio string, year int) *movie {
+	return &movie{title: title, studio: studio, yearPublished: year}
 }
 
-func (movie *Movie) CompareTo(other *Movie) int {
+func (movie *movie) compareTo(other *movie) int {
 	return 0
 }
